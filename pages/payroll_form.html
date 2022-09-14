@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/payroll_form.css">
+    <script src="../javascript/payroll_form.js"></script>
+    <title>EmpApp</title>
+</head>
+<body>
+    <div class="header-content">
+        <div class="logo-content">
+            <img src="../assets/images/logo.png">
+            <div>
+                <span class="emp-text">Employee</span>
+                <span class="emp-text emp-payroll">Payroll</span>
+            </div>
+        </div>
+        <h2>Add Employee Payroll UI/UX Design</h2>
+    </div>
+
+    <div class="form-content">
+        <form class="form">
+            <div class="form-head"><b>Emploiyee Payroll Form</b></div>
+            <div class="row-content">
+                <tr>
+                    <div class="label-span">
+                    <label>Name</label>
+                    <input type="text" class="input-field" id="fname" pattern="^([a-zA-Z]+){3,}" title="Atlest three char" required>
+                    </div>
+                </tr>
+                
+                <br> 
+                <tr>   
+                <div class="profile-radio-content">
+                        <label><br>Profile:<br></label>
+                        <input type="radio" class="radio-field" id="profile1">
+                        <img src="../assets/images/Ellipse -1.png">
+                        <input type="radio" id="profile2">
+                        <img src="../assets/images/Ellipse -2.png">
+                        <input type="radio" id="profile3">
+                        <img src="../assets/images/Ellipse -3.png">
+                        <input type="radio" id="profile4">
+                        <img src="../assets/images/Ellipse -4.png">
+                </div>
+                </tr>
+                <br><br>
+                    <tr>
+                        <div class="profile-radio-content">
+                        <label>Gender:</label>
+                        <input type="radio" class="radio-field" id="Male" required>Male
+                        <input type="radio" class="radio-field" id="Male" required>Female
+                        </div>
+                    </tr>
+
+                    <br><br>
+                    <tr>
+                        <div class="checkbox-content">
+                        <label>Department:</label>
+                        <div class="checkbox-field">
+                            <input type="checkbox" id="checked1">HR
+                        </div>
+                        <div class="checkbox-field">
+                            <input type="checkbox" id="checked2">Sales
+                        </div>
+                        <div class="checkbox-field">
+                            <input type="checkbox" id="checked3">Finance
+                        </div>
+                        <div class="checkbox-field">
+                            <input type="checkbox" id="checked4">Engineer
+                        </div>
+                        <div class="checkbox-field">
+                            <input type="checkbox" id="checked5">Others
+                        </div>
+                        </div>
+                    </tr>
+                    <br><br>
+                    <tr>
+                        <div class="profile-radio-content">
+                        <label>Salary:</label>
+                        <input type="range" class="radio-field" min="25000" max="100000" step="100" id="salary">
+                        <span id="salaryvalue"></span>
+                        <script>
+                            var rangeslider = document.getElementById("salary");
+                            var output = document.getElementById("salaryvalue");
+                            output.innerHTML = rangeslider.value;
+                            rangeslider.oninput = function() {
+                            output.innerHTML = this.value;
+                                                            }
+                        </script>
+                        </div>
+                    </tr>
+                    <br><br>
+                    <tr>
+                        <div class="profile-radio-content">
+                            <label>Start Date</label>
+                            <div class="day">
+                                <select>
+                                    <option value='01'>1</option>
+                                    <option value='02'>2</option>
+                                    <option value='03'>3</option>
+                                    <option value='04'>4</option>
+                                    <option value='05'>5</option>
+                                    
+                                </select>
+                            </div>
+                            <div class="month">
+                                <select>
+                                    <option value='01'>January</option>
+                                    <option value='02'>February</option>
+                                    <option value='03'>March</option>
+                                    <option value='04'>April</option>
+                                    <option value='05'>May</option>
+                                    <option value='06'>June</option>
+                                    <option value='07'>July</option>
+                                    <option value='08'>August</option>
+                                    <option value='09'>September</option>
+                                    <option value='10'>October</option>
+                                    <option value='11'>November</option>
+                                    <option value='12'>December</option>
+                                </select>
+                            </div>
+                            <div class="year">
+                                <select>
+                                    <option value='01'>2020</option>
+                                    <option value='02'>2021</option>
+                                    <option value='03'>2022</option>
+                                    <option value='04'>2023</option>
+                                    <option value='05'>2024</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                    </tr>
+                    <br><br>
+                    <tr>
+                        <div class="label-span">
+                            <label>Notes</label>
+                            <input type="text" class="notes-field" id="notes">
+                        </div>
+                    </tr>
+                    <br>
+                    </tr>
+                    <div class="label-span">
+                        <button input type="submit" class="button-field1">Cancel</button>
+                        <button input type="submit" class="button-field2">Submit</button>
+                        <button input type="submit" class="button-field3">Reset</button>
+                    </div>
+                   
+                
+
+            </div>
+            
+        
+            
+        </form>
+    </div>
+
+      
+    
+    
+</body>
+</html>
