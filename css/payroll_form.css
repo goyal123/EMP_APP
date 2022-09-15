@@ -78,7 +78,6 @@ h2{
 {
     display: flex;
     margin-left: 90px;
-    padding: auto;
     flex-direction: row;
 }
 
@@ -103,8 +102,7 @@ h2{
 
 .checkbox-field
 {   
-    margin-left: 60px;
-    padding-right:0px;
+    margin-left: 10px;
 }
 
 .day
@@ -146,4 +144,42 @@ h2{
 {
     margin-left: 20px;
     width: 99px;
+}
+
+#checked1
+{
+ margin-left:50px;
+}
+#checked2
+{
+ margin-left:20px;
+}
+#checked3
+{
+ margin-left:20px;
+}
+#checked4
+{
+ margin-left:20px;
+}
+#checked5
+{
+ margin-left:20px;
+}
+.Gender_field
+{
+    margin-left: 80px;
+}
+.output {
+    background-color: rgba(255, 255, 255, 0.136);
+    padding: 40px 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+.logo-content > img{
+    margin-left:80px;
+}
+
+.profile-radio-content > img{
+    margin-right: 20px;
 }

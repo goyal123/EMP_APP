@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
     <link rel="stylesheet" href="../css/payroll_form.css">
     <script src="../javascript/payroll_form.js"></script>
     <title>EmpApp</title>
+    
 </head>
 <body>
     <div class="header-content">
@@ -49,8 +51,10 @@
                     <tr>
                         <div class="profile-radio-content">
                         <label>Gender:</label>
-                        <input type="radio" class="radio-field" id="Male" required>Male
-                        <input type="radio" class="radio-field" id="Male" required>Female
+                        <div class="Gender_field">
+                        <input type="radio"  id="Male" required>Male
+                        <input type="radio"  id="female" required>Female
+                        </div>
                         </div>
                     </tr>
 
@@ -59,18 +63,10 @@
                         <div class="checkbox-content">
                         <label>Department:</label>
                         <div class="checkbox-field">
-                            <input type="checkbox" id="checked1">HR
-                        </div>
-                        <div class="checkbox-field">
+                            <input type="checkbox" id="checked1" Name="HR">HR
                             <input type="checkbox" id="checked2">Sales
-                        </div>
-                        <div class="checkbox-field">
                             <input type="checkbox" id="checked3">Finance
-                        </div>
-                        <div class="checkbox-field">
                             <input type="checkbox" id="checked4">Engineer
-                        </div>
-                        <div class="checkbox-field">
                             <input type="checkbox" id="checked5">Others
                         </div>
                         </div>
